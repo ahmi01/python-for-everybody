@@ -5,7 +5,7 @@ hours = int(input('Enter Hours: '))
 rate = float(input('Enter Rate: '))
 
 if hours > 40:
-    extra_time = int(hours - 40) * 1.5 * 10
+    extra_time = int(hours - 40) * 1.5 * hours
     gross_pay = (hours * rate) + extra_time
 else :
     gross_pay = hours * rate

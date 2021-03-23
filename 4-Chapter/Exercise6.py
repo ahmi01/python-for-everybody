@@ -4,7 +4,7 @@
 
 def computepay(hours, rate):
     if hours > 40:
-        extra_time = int(hours - 40) * 1.5 * 10
+        extra_time = int(hours - 40) * 1.5 * rate
         gross_pay = (hours * rate) + extra_time
     else :
         gross_pay = hours * rate

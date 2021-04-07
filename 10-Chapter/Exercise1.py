@@ -35,9 +35,9 @@ for line in fhand:
     email_dict[from_email] = email_dict.get(from_email,0) + 1
 
 count_list = list()
-for count, email in email_dict.items():
+for email, count in email_dict.items():
     count_list.append((count, email))
 
 count_list.sort(reverse=True)
-max_email, max_count = count_list[0]
+max_count, max_email = count_list[0]
 print(max_email, max_count)
